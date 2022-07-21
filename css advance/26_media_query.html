@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media query</title>
+    <style>
+        .box{
+            height: 80vh;
+            background-color: rgb(250, 212, 0);
+            /*
+            if media query is not defined any particular range then default value is applied.
+            */
+        }
+        /*
+        @media (max-width:300px) {
+            .box{
+                background-color: red;
+            }
+        }
+        @media (min-width:300px) and (max-width:600px) {
+            .box{
+                background-color: greenyellow;
+            }
+        }
+        @media (min-width:700px) and (max-width:1000px) {
+            .box{
+                background-color: rgb(243, 50, 114);
+            }
+        }
+        */
+        @media screen and (min-width:800px) {
+            .box{
+                background-color : rgb(243, 50, 114);
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>

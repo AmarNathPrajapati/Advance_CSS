@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>special selector in css</title>
+    <style>
+        /* 
+
+        ul p{ every p within ul will be effected
+            background-color: aqua;
+            ul > p{ every p that are just after ul are affected
+                background-color: aqua;
+            }
+            ul + p{ every p whose upper simbling are ul  will be affected
+                background-color: aqua;
+            }
+            div li p{ 
+                background-color: aqua;
+            }
+        }
+        attribute selector
+        input[type = 'text']{
+            background-color: aqua;
+        }
+        n-th child selector
+        li:nth-child(2){
+            background-color: greenyellow;
+        }
+         */
+        li:nth-child(even){
+            background-color: greenyellow;
+        }
+        li:nth-child(odd){
+            background-color: rgb(161, 47, 255);
+        }
+        li:nth-child(2n+5){
+            background-color: rgb(255, 47, 47);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <ul>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus aspernatur earum dolore consectetur tempora voluptates, accusamus recusandae ad ipsum nisi qui dolorum sunt aliquam veniam voluptatum explicabo modi ducimus atque alias nihil dolorem.</p>
+            <h1>this is h1 heading</h1>
+            <li>this is li No.01
+                <ul>
+                    <h1> <ol>
+                        <input type="text" name="" id="">
+                        <input type="email" name="" id="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit deleniti veniam consequatur dignissimos molestiae perspiciatis, laudantium alias suscipit numquam, maiores, dolorem mollitia. Tenetur odio ducimus numquam aliquam est maxime quisquam.</p>
+                    </ol></h1>
+                </ul>
+            </li>
+            <li>this is li No.02</li>
+            <li>this is li No.02</li>
+            <li>this is li No.02</li>
+            <li>this is li No.02</li>
+            <li>this is li No.02</li>
+            <li>this is li No.02</li>
+            <li>this is li No.02</li>
+            <li>this is li No.02</li>
+            <li>this is li No.02</li>
+            <ul>
+                <ul></ul>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus exercitationem doloribus dolores minus ipsa  ullam voluptatibus aliquam asperiores illo eos, fugit voluptate autem repellat ipsam porro sequi temporibus ut pariatur assumenda. Possimus hic asperiores aspernatur maxime iste deleniti obcaecati quisquam tenetur amet dolorem?</p>
+            </ul>
+            <li>this is li No.03</li>
+            <li>this is li No.04</li>
+        </ul> -->
+        <ul>
+            <li>this is li1</li>
+            <li>this is li2</li>
+            <li>this is li3</li>
+            <li>this is li4</li>
+            <li>this is li5</li>
+            <li>this is li6</li>
+            <li>this is li7</li>
+            <li>this is li8</li>
+            <li>this is li9</li>
+            <li>this is li10</li>
+        </ul>
+    </div>
+</body>
+</html>

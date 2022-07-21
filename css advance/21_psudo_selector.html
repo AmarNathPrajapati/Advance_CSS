@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        for child selector, element should be child of another selector
+        .container li:nth-child(2){
+            font-size: 2rem;
+        }
+        .container li:nth-child(2){
+            font-size: 2rem;
+        }
+        .box li:nth-child(2){
+            font-size: 2rem;
+        }
+        */
+        /*
+        first-child: first child hona chahiye.
+        */
+
+        li:first-child{
+            color: red;
+        }
+        li:last-child{
+            color:green;
+        }
+        p:first-child{
+            color: red;
+        }
+        p:last-child{
+            color:green;
+        }
+        p:nth-child(2){
+            /*
+            child huu aur dosare number par hoon.
+            */
+            color:yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+            <li>Lorem</li>
+            <li>Lorem, ipsum.</li>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem ipsum dolor sit.</li>
+    </div>
+    <ul>
+        <li>lremasjdf  something </li>
+        <li>lorme kuchh kuchh</li>
+        <li>lorem abhi aata hu</li>
+        <li>aur batao, what are you doing</li>
+        <ul>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </ul>
+    </ul>
+    <ul>
+        <h1>first</h1>
+        <p>second</p>
+        <li>third</li>
+    </ul>
+</body>
+</html>

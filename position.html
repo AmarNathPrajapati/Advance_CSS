@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position in CSS</title>
+    <style>
+        .container{
+            border: 2px solid green;
+            height: 4000px;
+        }
+        .box{
+            display: inline-block;/*if you want to change width with inline property*/
+            background-color: chocolate;
+            width: 200px;
+            height: 200px;
+            margin:5px;
+        }
+        /*there are five type of position in css
+        1.static(by default)
+        2.relative - relative to its normal postion i.e. if you want to change their position it shift with its normal postion
+        3.absolute - relative to its parent postion i.e. if you want to change their position it shift with its parent postion
+        4.fixed - relative to its browser window postion i.e. if you want to change their position it shift with its browser window postion
+        5.sticy*/
+        #box3{
+            /*position: relative;
+            left: 30px;
+            top: 30px;
+            
+            position: absolute;
+            */
+            position: fixed;
+            right: 30px;
+            bottom: 10px;
+        }
+        #box4{
+            position: sticky;
+            top: 10px;  /* for seeing effect you will have to give left or right*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+</html>

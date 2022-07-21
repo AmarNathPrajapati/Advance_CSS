@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 50vw;
+            height: 50vh;
+        }
+        #box1{
+            background-color: black;
+            transition: background-color 2s ease-in 0.25s;
+        }
+        #box1:hover{
+            background-color: yellow;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        #box2{
+            background: url(snake.PNG);
+            background-size: contain;
+            background-position: center;
+            transition: background 2s ease-out;
+            transition: all 2s ease-out;
+        }
+        #box2:hover{
+            width: 100vw;
+            height: 100vh;
+            background: url(tic.png);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1" class="box"></div>
+    <div id="box2" class="box"></div>
+    <!-- <div id="box3" class="box"></div>
+    <div id="box4" class="box"></div> -->
+</body>
+</html>

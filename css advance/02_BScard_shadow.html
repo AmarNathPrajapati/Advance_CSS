@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .card{
+            box-shadow: -4px -18px 2px 6px rgb(232, 167, 245), 4px 18px 2px 6px rgb(200, 255, 0);
+        }
+        .card-title{
+            text-shadow: 1px 1px 2px rgb(187, 47, 180);
+        }
+        .chandanImg::before{
+            background: url(chandan.jpeg);
+            width: 100%;
+            height: 100%;
+            background-size: 200px;
+            background-repeat: no-repeat;
+            content: '';
+            position: absolute;
+            z-index: -1;
+            opacity: 0.5;
+        }
+        .box2{
+            width: 40vh;
+            height: 40vh;
+            box-shadow: 2px 2px 8px black;
+            border-radius: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container m-5">
+        <div class="card" style="width:500px">
+            <div class="card-header bg-secondary">
+                this the header
+            </div>
+            <div class="card-body bg-gradient">
+                <h4 class="card-title">Amar Nath Prajapati</h4>
+            </div>
+            <div class="card-text">This is the card-text</div>
+        </div>
+        <div class="card-footer bg-primary">
+            this is the card-footer
+        </div>
+    </div>
+    <div class="car">
+        <div class="chandanImg">
+            <h4 style="padding-top: 215px"class="ps-5">Chandan
+            </h4>
+        </div>
+        <div class="card-body">
+            <p>this is  the paragraph</p>
+        </div>
+    </div>
+    </div>
+    <div class="box2">
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

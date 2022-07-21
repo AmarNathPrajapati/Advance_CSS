@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css_area</title>
+</head>
+<style>
+    .container{
+        display: grid;
+        grid-gap: 0.5rem;
+        grid-template-areas:
+        'navbar navbar navbar navbar'
+        'section section section aside'
+        'footer footer footer footer'
+        ;
+    }
+    .item{
+        background-color: aqua;
+        border: 2px solid black;
+    }
+    #navbar{
+        grid-area: navbar;
+    }
+    #section{
+        grid-area: section;
+    }
+    #aside{
+        grid-area: aside;
+    }
+    #footer{
+        grid-area: footer;
+    }
+    @media(max-width:300px){
+        .item{
+            background-color: rgb(60, 255, 0);
+        }
+    }
+    @media(max-width:500px) and (min-width:300px) {
+        .item{
+            background-color: rgb(25, 0, 255);
+        }
+        .container{
+            grid-template-areas:
+            'navbar navbar navbar navbar'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer'
+            ;
+
+        }
+    }
+    @media(max-width:800px) and (min-width:500px){
+        .item{
+            background-color: rgb(217, 255, 0);
+        }
+        .container{
+            grid-template-areas:
+            'navbar navbar navbar navbar'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer'
+            ;
+
+        }
+    }
+    @media(min-width:800px){
+        .item{
+            background-color: rgb(255, 0, 200);
+        }
+    }
+</style>
+<body>
+    <div class="container">
+
+        <div class="item" id="navbar">
+            Home About Services Contact Us
+        </div>
+        <div class="item" id="section">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda autem atque eveniet laborum ut. Culpa quae dolor asperiores illo neque consectetur exercitationem tempore laborum. Beatae veniam ullam laudantium rem voluptas iste fuga adipisci mollitia. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium sequi fugiat quaerat ex vel culpa facere, in cum quidem veritatis similique veniam, earum iusto! Quae officia aliquam, iure magni reiciendis eum asperiores vero molestiae officiis illum ipsum illo praesentium. Hic corporis perspiciatis quasi ad sapiente consequuntur blanditiis, minima voluptate, quis autem eaque. Dolore soluta nam libero porro quisquam aperiam suscipit repudiandae autem saepe vel, aut inventore alias dolorum aspernatur, totam labore sapiente doloremque. Iusto esse amet ab voluptate excepturi dolores, tenetur sed sapiente accusamus illum? Possimus delectus esse sunt modi unde dignissimos exercitationem eveniet accusamus, excepturi animi fugiat consectetur commodi maxime eius accusantium, facere voluptatem et tempore vel provident. Quia suscipit quam repellat assumenda quidem tenetur molestias cumque! Similique, saepe. Minima explicabo natus dolor, consequuntur, enim, saepe cum commodi recusandae molestiae id laboriosam quo quam itaque suscipit quia. Perferendis ut consectetur temporibus in, error aut, saepe magnam animi facilis expedita, veniam modi maxime corporis deleniti neque atque id ratione. Nisi incidunt natus itaque officia quasi eaque vel ipsa quas voluptatum tempora, minus, repellendus aspernatur doloribus tempore! Eaque iusto labore vero ab, voluptatibus aliquam deleniti tempora. Voluptatum vitae, possimus repellat voluptatibus veniam accusamus fugit, recusandae itaque praesentium voluptate iste maxime. Nostrum voluptatem eligendi quaerat fugiat eveniet quidem sapiente, fugit provident necessitatibus, alias ullam ipsam magni! Enim nemo culpa placeat sequi mollitia vitae quasi, delectus, perspiciatis sapiente nobis cumque obcaecati, atque nesciunt dolor unde quidem vero.
+        </div>
+        <div class="item" id="aside">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem molestiae et aperiam deserunt ea beatae odio sed odit, vitae officia temporibus eveniet voluptate, ab similique error quaerat optio voluptas. Tempore culpa eveniet quae repudiandae esse obcaecati in minus. Corporis reprehenderit magnam ducimus quo quos, laborum iste distinctio nobis ipsum doloremque harum suscipit enim earum eveniet odit, temporibus delectus voluptatem. Dolor voluptatem ad reiciendis dolore, facilis velit minus placeat! Inventore commodi fugiat earum harum explicabo, cum saepe adipisci quas reiciendis minus officia impedit blanditiis culpa. Hic, amet vero odio pariatur maiores fuga impedit neque sit qui, recusandae laudantium? Voluptatibus sapiente voluptatum eos, ratione pariatur placeat id suscipit alias tempora nostrum exercitationem repellat? Ab corporis commodi nam voluptatem, optio omnis et doloribus adipisci, repudiandae dicta animi tempora nostrum facilis suscipit, atque aperiam nemo numquam dolore.
+        </div>
+        <div class="item" id="footer">
+            Lorem ipsum dolor sit amet.
+        </div>
+    </div>
+
+</body>
+</html>

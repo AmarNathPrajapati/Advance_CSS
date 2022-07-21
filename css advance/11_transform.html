@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            font-size: 10px;
+        }
+        .box{
+            width: 40vh;
+            height: 40vh;
+            background: radial-gradient(black,red,blue);
+            transition: all 2s ;
+        }
+        .box:hover{
+            transform: rotate(90deg);
+            /*
+            you can rotate,transtlate  either x,y or z direction indivisually.
+            transform-origin: 25% 75%;
+            transform: scale(1.5, .5);
+            */
+            transform: translate(4rem, 6rem) rotate(90deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>

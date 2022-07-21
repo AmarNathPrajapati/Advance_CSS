@@ -1,0 +1,42 @@
+<!-- 
+    [title~="flower"] {|,^,$
+  border: 5px solid yellow;
+}
+The example above will match elements with title="flower", title="summer flower", and title="flower new", but not title="my-flower" or title="flowers".
+
+ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img[alt="img"] {
+        width: 95vw;
+        height: 100vh;
+      }
+      div[class="box"] {
+        height: 300px;
+        background-color: springgreen;
+      }
+      div[width] {
+        text-align: center;
+        height: 300px;
+        background-color: springgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="chandan.jpeg" alt="img" />
+    </div>
+    <div width="300px" class="box">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus
+      exercitationem quibusdam est, veritatis nihil consequatur enim consectetur
+      rerum, minima reprehenderit aut eligendi? Laudantium quo harum laborum
+      enim quia nulla nihil!
+    </div>
+  </body>
+</html>

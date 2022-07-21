@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container p{
+            /*all p tag inside container will be effected
+            */
+            font-size: 2rem;
+        }
+        .container .box p{
+            /*  all p tag inside box will be effected.
+            don't confused with group selector, in group selector there must be comma between element
+            */
+            font-size: 2rem;
+        }
+        .container>p{
+            /*oontainer ka direct child, if p then it will be effected
+            */
+            font-size: 2rem;
+        }
+        .container+p{
+            /* if p is the next simbling of div, then it will effected.
+            */
+            font-size: 2rem;
+        }
+        .box+p{
+            /*
+            */
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="smallBox">
+                <p>Lorem ipsum dolor sit.</p>
+            </div>
+            <p>Lorem ipsum dolor sit.</p>
+        </div>
+        <p>Lorem ipsum dolor sit amet.22</p>
+        <p>Lorem ipsum dolor sit amet consectetur.3</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.last</p>
+</body>
+</html>

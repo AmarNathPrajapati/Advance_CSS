@@ -1,0 +1,55 @@
+<!-- 
+    :: first-letter  -> if targets the first letter of that elements.
+    :: first-line -> it targets the first-line of that elements.
+    :: selection -> it targets  parts of web, that are going to select.
+    :: placeholder -> to change the property of placeholder. 
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::first-letter{
+            font-size: 24px;
+            color:rgb(153, 0, 255);
+        }
+        p::first-line{
+            background-color: aqua;
+            font-size: 20px;
+        }
+        li::first-line{
+            color:rebeccapurple;
+        }
+        h1::first-letter{
+            color: rgb(0, 47, 255);
+        }
+        ::selection{
+            color: rgb(193, 0, 231);
+            background-color: aquamarine;
+        }
+        ::placeholder{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum cumque non ipsam totam quam voluptatibus dolorem voluptas! Alias, accusantium quaerat vitae iusto cupiditate necessitatibus velit facilis saepe. Aperiam repellendus perspiciatis facere dicta sunt qui blanditiis reiciendis tenetur maiores? Voluptas eligendi facere quam distinctio ipsa.
+    </p>
+    <ol>
+        <li>this is the content</li>
+        <li>this is the content</li>
+        <li>this is the content</li>
+        <li>this is the content</li>
+    </ol>
+    <h1>
+        Lorem ipsum dolor sit amet.
+    </h1>
+    <input type="text" name="" id="" placeholder="Full Name">
+    <input type="text" name="" id="" placeholder="Address">
+    <input type="text" name="" id="" placeholder="Mobile No.">
+</body>
+</html>

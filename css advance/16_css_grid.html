@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            /*
+            grid-auto-columns:1fr 2fr 2fr ;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-columns: repeat(auto-fit,minmax(440px,100px));// return maximum value
+            */
+            
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 1rem;
+            row-gap: 2rem;
+        }
+        .item1{
+            grid-column-start: 1;
+            grid-column-end: 3;
+
+        }
+        .item{
+            background-color: lightcoral;
+            border: 2px solid gray;
+        }
+        .item1{
+            background-color: lightcoral;
+            border: 2px solid gray;
+        }
+        #navbar{
+            grid-area: a;
+        }
+        #section{
+            grid-area: b;
+        }
+        #aside{
+            grid-area: c;
+        }
+        #footer{
+            grid-area: d;
+        }
+        .container2{
+            display: grid;
+            grid-template-areas:
+            'a a a a'
+            'b b b c'
+            'd d d d';
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">item1</div>
+        <div class="item">item2</div>
+        <div class="item">item3</div>
+        <div class="item">item4</div>
+        <div class="item">item5</div>
+        <div class="item">item6</div>
+        <div class="item">item7</div>
+        <div class="item">item8</div>
+        <div class="item">item9</div>
+        <div class="item">item10</div>
+        <div class="item">item11</div>
+        <div class="item">item12</div>
+        <div style="width:50px ;" class="item">item12</div>
+    </div>
+
+    <div class="container2">
+        <div class="item" id="navbar">
+            Home About ContactUs Services
+        </div>
+        <div class="item" id="section">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti tempora, perferendis voluptas suscipit dolorem obcaecati eum soluta sit eveniet repellendus non nesciunt possimus quidem similique. Iusto id consequuntur dolorem natus, eum quaerat voluptatem harum, impedit molestias amet aliquam suscipit libero minus, itaque ullam quidem!
+        </div>
+        <div class="item" id="aside">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci veritatis rem omnis, porro modi quo delectus quod dolore? Odio consequatur maiores omnis, sint labore quidem unde, sunt natus debitis quis cumque amet quae?
+        </div>
+        <div class="item" id="footer">
+            Lorem ipsum dolor sit amet.
+        </div>
+    </div>
+</body>
+</html>

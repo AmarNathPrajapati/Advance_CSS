@@ -1,0 +1,38 @@
+<!-- 1.without content property, there is no meaning of before and after 
+2. with img tag before and after selector can't be used.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p:hover::before{
+            content: "before the paragraph";
+            background-color: aquamarine;
+            /*
+            position: absolute;
+            height: 100vh;*/
+            color:violet;
+            display: block;
+            font-size: 25px;
+            font-weight: bold;
+        
+        }
+        p:hover::after{
+            content: "after the paragraph";
+            background-color: aquamarine;
+            color:violet;
+            display: block;
+            font-size: 25px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        this is the paragraph.
+    </p>
+</body>
+</html>

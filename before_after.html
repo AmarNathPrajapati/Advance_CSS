@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before and after psudo selector</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        #section::before{
+            content: "";
+            background:url('bg.jpg');
+            /*background:url('https://source.unsplash.com/collection/190727/1600x900');*/
+            position: absolute;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.3;
+        }
+        .navigation{
+            display: flex;
+        }
+        .navigation li{
+            padding: 10px;
+            list-style: none;
+        }
+        .navigation li a{
+            text-decoration: none; 
+            color: white;        
+        }
+        #section{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: auto;
+        }
+        /*section::before{
+            content:'this is content';
+        }
+        p::after{
+            content:'paragraph after selector';
+        }*/
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navigation">
+                <li><a href="http://">Home</a></li>
+                <li><a href="http://">About</a></li>
+                <li><a href="http://">Services</a></li>
+                <li><a href="http://">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="section">
+        <h1>
+            welcome to my portfolio website 
+        </h1>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel odio tempora itaque id recusandae quia sequi sunt laborum. Pariatur illum eaque minus est iste earum, tempore veniam libero repellat necessitatibus omnis quam inventore autem in reiciendis aut dicta architecto sunt quidem suscipit tenetur eligendi. Cumque.
+        </p>
+    </section>
+</body>
+</html>

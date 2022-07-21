@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID</title>
+    <style>
+        .grid_container{
+            display: grid;
+            grid-template-columns: 100px 100px 100px; /*it divide grid-item in three column of widht 100px*/
+            grid-template-columns: 100px 100px auto;  /*here last column take remain space of screen*/
+            grid-template-columns: 100px auto auto;  /*here last two column take remain space of screen with equal size*/
+            grid-template-columns: 2fr 3fr 4fr;  /*it divide screen in ratio 2:3:4*/
+            grid-template-columns: repeat(5, 1fr);  /*it divide screen into 3 column of same width*/
+            grid-gap: 2rem;
+            grid-template-rows: 100px 100px 100px 100px;/*first four row will get width of 100px*/
+            grid-template-rows:1fr 2fr 4fr ;/*first three row will devide in ratio 1:2:4 and rest all rows will get of width 1fr*/
+            grid-auto-rows: 100px;/*jinke baare me nahi bataya gaya hai they will get widht of 100px*/
+            grid-column-gap: 200px;
+            grid-row-gap: 400px;
+
+
+        }
+        .item{
+            background-color: aqua;
+            border: 2px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="grid_container">
+        <div class="item" id="item1">this is item no.01</div>
+        <div class="item" id="item2">this is item no.02</div>
+        <div class="item" id="item3">this is item no.03</div>
+        <div class="item" id="item4">this is item no.04</div>
+        <div class="item" id="item5">this is item no.05</div>
+        <div class="item" id="item6">this is item no.06</div>
+        <div class="item" id="item7">this is item no.07</div>
+        <div class="item" id="item8">this is item no.08</div>
+        <div class="item" id="item9">this is item no.09</div>
+        <div class="item" id="item9">this is item no.09</div>
+        <div class="item" id="item9">this is item no.09</div>
+        <div class="item" id="item9">this is item no.09</div>
+        <div class="item" id="item9">this is item no.09</div>
+        <div class="item" id="item9">this is item no.09</div>
+        <div class="item" id="item9">this is item no.09</div>
+        <div class="item" id="item9">this is item no.09</div>
+        <div class="item" id="item9">this is item no.09</div>
+        <div class="item" id="item9">this is item no.09</div>
+        <div class="item" id="item9">this is item no.09</div>
+        <div class="item" id="item9">this is item no.09</div>
+    </div>
+</body>
+</html>

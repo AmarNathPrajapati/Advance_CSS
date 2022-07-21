@@ -1,0 +1,46 @@
+<!-- Filter functions includes blur, brightness, contrast, drop-shadow, gray scale , hue rotate , invert and opacity
+1. drop-shadow(width , height , blur ,color) ;(like box shadow) width and height can be negative.
+2. Gray Scale function: convert into gray color . it take parameter as (in %);
+3. sepia is as same as grayScale.
+4. Saturate ( 0% means gray and 100% means original) more than 100% for super saturate.
+5. hue rotate:(deg) refer internet for heu circle color for different angle.
+6. invert function changes(bright to light and vice-versa) value: 0% for no change and 100% for totally change.
+7. opacity ( 0 to 100%)
+8. brightness (0% for blace and 100% for no change) more than 100% more bright.(negative value make image black)
+9. Contrast: 0% for gray, 100% for no change, under 100% decrease contrast and above 100% increase contrast.
+10. Blur: take lenght unit for blur like (5px, 10rem)
+
+Multiple Css filter:
+        use property without using comma.
+        don't use comma between shadows;
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .img{ 
+            width:39vh;
+            height:39vh;
+            filter: drop-shadow(2px 3px 3px black)grayscale(50%) sepia(58%) ;
+            filter: saturate(2) hue-rotate(300deg) brightness(1.5);
+            filter: contrast(5) opacity(.5);
+        }
+        .box{
+            background-color: aqua;
+            width:39vh;
+            height:39vh;
+            box-shadow:2px 3px 2px black; 
+        }
+    </style>
+</head>
+<body>
+    <img src="chandan.jpeg" alt="" class="img">
+    <div class="box">
+        this
+    </div>
+</body>
+</html>
